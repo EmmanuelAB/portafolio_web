@@ -1,0 +1,543 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="refresh" content="2"> -->
+
+        <style>
+            header div {
+                background-image: linear-gradient(darkblue, black);
+                padding: 10px;
+                text-align: center;
+            }
+            div > h1, div > h2 {
+                color: white;
+            }
+            .gray {
+                background: #DDD;
+                text-align: center;
+                padding:1px;
+                margin: 10px 0px;
+            }
+            .gray:hover{
+                background: #CCC;
+            }
+            .left-border{
+                padding-left: 7px;
+            }
+            .left-border:hover{
+                padding-left: 0px;
+                border-left-style: solid;
+                border-left-width: 7px;
+                border-left-color: red;
+
+            }
+            div > h3{
+                font-size: 20pt;
+            }
+            
+            table{margin: 20px auto}
+            
+            ul{
+                padding: 10px 5px;
+                margin: 10px 20px;
+            }
+            ul ul{
+                margin: 0px;
+                padding: 0px;
+                margin-left: 10px;
+            }
+            td > ul > li{
+                background: #BBB;
+                padding: 10px;
+                margin-top: 20px;
+            }
+            th, td{
+                padding: 3px 5px;
+            }
+            th{
+                font-size: 18pt;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="info_inst left-border">
+                 <h1>Instituto Tecnológico de Costa Rica</h1>
+                 <h2> IC8057 Introducción al desarrollo de aplicaciones WEB</h2>
+            </div>
+        </header>
+
+      
+        <div class="gray left-border">
+            <h3>Semana 3 - Sintaxis y HTML5 y CSS3</h3>
+        </div>
+
+        <div class="gray">
+            <h3>Elementos HTML</h3>
+            <table border="1">
+                <tr>
+                    <th>HTML</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>
+                                <table border="1">
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Propósito</th>
+                                        <th>Sintaxis</th>
+                                        <th>Atributos</th>
+                                        <th>Ejemplo</th>
+                                    </tr>
+                                    <tr>
+                                        <td>a</td>
+                                        <td>Enlace a otra url/recurso</td>
+                                        <td> <xmp> <a href=""></a> </xmp> </td>
+                                        <td>href:url al recurso</td>
+                                        <td><a href="https://google.com">google</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>p</td>
+                                        <td>Encerrar párrafos de texto</td>
+                                        <td> <xmp> <p></p> </xmp> </td>
+                                        <td>Estándar</td>
+                                        <td><p>Un párrafo</p><p>otro más</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td>h1</td>
+                                        <td>Titulo nivel 1</td>
+                                        <td> <xmp> <h1></h1> </xmp> </td>
+                                        <td>Estándar</td>
+                                        <td><h1>Esto es h1</h1></td>
+                                    </tr>
+                                    <tr>
+                                        <td>h2</td>
+                                        <td>Titulo nivel 2</td>
+                                        <td> <xmp> <h2></h2> </xmp> </td>
+                                        <td>Estándar</td>
+                                        <td><h2>Esto es h2</h2></td>
+                                    </tr>
+                                    <tr>
+                                        <td>h3</td>
+                                        <td>Titulo nivel 3</td>
+                                        <td> <xmp> <h3></h3> </xmp> </td>
+                                        <td>Estándar</td>
+                                        <td><h3>Esto es h3</h3></td>
+                                    </tr>
+                                    <tr>
+                                        <td>h4</td>
+                                        <td>Titulo nivel 4</td>
+                                        <td> <xmp> <h4></h4> </xmp> </td>
+                                        <td>Estándar</td>
+                                        <td><h4>Esto es h4</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td>h5</td>
+                                        <td>Titulo nivel 5</td>
+                                        <td> <xmp> <h5></h5> </xmp> </td>
+                                        <td>Estándar</td>
+                                        <td><h5>Esto es h5</h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td>h6</td>
+                                        <td>Titulo nivel 6</td>
+                                        <td> <xmp> <h6></h6> </xmp> </td>
+                                        <td>Estándar</td>
+                                        <td><h6>Esto es h6</h6></td>
+                                    </tr>
+                                    <tr>
+                                        <td>script</td>
+                                        <td>Insertar código JavaScript</td>
+                                        <td> <xmp> <a href=""></a> </xmp> </td>
+                                        <td>type:"text/javascript"</td>
+                                        <td><button>TouchMe</button><script type="text/javascript">document.querySelector("button").addEventListener("click",function(){alert("Hello from JavaScript");},false);</script></td>
+                                    </tr>
+                                    <tr>
+                                        <td>img</td>
+                                        <td>Incluir imagenes</td>
+                                        <td> <img src="" width="" height=""> </td>
+                                        <td>src:ruta/url width:int height:int</td>
+                                        <td><img src="https://via.placeholder.com/40"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>b</td>
+                                        <td>Mostrar texto en negrita</td>
+                                        <td> <xmp> <b>texto</b> </xmp> </td>
+                                        <td>Estándar</td>
+                                        <td> Texto con <b>negrita</b> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>i</td>
+                                        <td>Mostrar texto en itálica</td>
+                                        <td> <xmp> <i>texto</i> </xmp> </td>
+                                        <td>Estándar</td>
+                                        <td> Texto con <i>itálica</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>br</td>
+                                        <td>Forzar cambios de línea</td>
+                                        <td> <xmp> <br> </xmp> </td>
+                                        <td>Estándar</td>
+                                        <td>Una línea <br> pasa a otra</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ul</td>
+                                        <td>Listas desordenadas de elementos</td>
+                                        <td> <xmp> <ul><li>elem</li></ul> </xmp> </td>
+                                        <td>Estándar</td>
+                                        <td><ul><li>Elemento1</li><li>Elemento2</li></ul></td>
+                                    </tr>
+                                    <tr>
+                                        <td>u</td>
+                                        <td>Subrayar texto</td>
+                                        <td> <xmp> <u></u> </xmp> </td>
+                                        <td>Estándar</td>
+                                        <td> para <u>subrayar</u> texto</td>
+                                    </tr>
+
+                                </table>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="gray">
+            <h3>Elementos HTML 5</h3>
+            <table border="1">
+                <tr>
+                    <th>HTML 5</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>
+                                <table border="1">
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Propósito</th>
+                                        <th>Sintaxis</th>
+                                        <th>Atributos</th>
+                                        <th>Ejemplo</th>
+                                    </tr>
+                                    <tr>
+                                        <td>aside</td>
+                                        <td>Colocar paneles laterales al contenido principal</td>
+                                        <td><xmp>  <aside></aside>  </xmp></td>
+                                        <td>Estándar</td>
+                                        <td> <aside>Some text</aside> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>figure</td>
+                                        <td>Marcado de figuras, diagramas y fotos</td>
+                                        <td><xmp>  <figure></figure>  </xmp></td>
+                                        <td>Estándar</td>
+                                        <td> <figure><img src="https://via.placeholder.com/50"></figure> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>figcaption</td>
+                                        <td>Para subtitular un figure</td>
+                                        <td><xmp>  <figcaption></figcaption>  </xmp></td>
+                                        <td>Estándar</td>
+                                        <td> <figure><img src="https://via.placeholder.com/50"><figcaption>Figure 1.1</figcaption></figure> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>header</td>
+                                        <td>Para cabecera, parte titular de la página</td>
+                                        <td><xmp>  <header></header>  </xmp></td>
+                                        <td>Estándar</td>
+                                        <td> <header><h1>Titulo</h1></header> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>footer</td>
+                                        <td>Parte final de la pagina: autores, fecha, licencias, etc.</td>
+                                        <td><xmp>  <footer></footer>  </xmp></td>
+                                        <td>Estándar</td>
+                                        <td> <footer>Copyright 2019</footer> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>main</td>
+                                        <td>Encapsula el tema central de la página </td>
+                                        <td><xmp>  <main></main>  </xmp></td>
+                                        <td>Estándar</td>
+                                        <td> <main><h1>Tema central</h1></main> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>mark</td>
+                                        <td>Dar énfasis a un texto en particular</td>
+                                        <td><xmp>  <mark></mark>  </xmp></td>
+                                        <td>Estándar</td>
+                                        <td> Last but <mark>not least...</mark> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>nav</td>
+                                        <td>Para barras de navegación, usualmente links</td>
+                                        <td><xmp>  <nav></nav>  </xmp></td>
+                                        <td>Estándar</td>
+                                        <td> 
+                                            <nav>
+                                                <a href=""> Downloads </a>
+                                                <a href=""> Products </a>
+                                                <a href=""> About Us </a>
+                                            </nav> 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>section</td>
+                                        <td>Dividir partes de la página por temas</td>
+                                        <td><xmp>  <section></section> </xmp></td>
+                                        <td>Estándar</td>
+                                        <td> <section>Cars</section> <section>Bikes</section> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>details</td>
+                                        <td>Para sección expandible para más información</td>
+                                        <td><xmp>  <details></details> </xmp></td>
+                                        <td>open</td>
+                                        <td> <details><summary>breve</summary><p>Más extenso</p></details> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>summary</td>
+                                        <td>La parte que se muestra contraída</td>
+                                        <td><xmp>  <summary></summary>  </xmp></td>
+                                        <td>Estándar</td>
+                                        <td> <details><summary>Esto es summary</summary><p>Más extenso</p></details> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>time</td>
+                                        <td>Mostrar fechas legibles y estructuradas al mismo tiempo</td>
+                                        <td><xmp>  <summary></summary>  </xmp></td>
+                                        <td>datetime</td>
+                                        <td> <time datetime="2008-02-14 20:00">Valentines day</time> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>progress</td>
+                                        <td>Mostrar barras de progreso</td>
+                                        <td><xmp>  <summary></summary>  </xmp></td>
+                                        <td>value:int max:int</td>
+                                        <td> <progress value="3" max="10"></progress> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>audio</td>
+                                        <td>Reproducir sonidos</td>
+                                        <td><xmp> <audio controls> </xmp>
+                                            <xmp> <source src="" type=""></xmp>
+                                            <xmp> </audio> </xmp>
+                                        </td>
+                                        <td>src:ruta/link type:audio/{ogg,mpeg,wav controls</td>
+                                        <td> <audio controls> <source src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Median_test.ogg" type="audio/ogg"> </audio> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>video</td>
+                                        <td>Reproducir videos</td>
+                                        <td><xmp> <video width="" height="" </xmp>
+                                            <xmp> controls> </xmp>
+                                            <xmp> <source src="" type=""> </xmp>
+                                            <xmp> </video></xmp>
+                                        </td>
+                                        <td>src:ruta/link type:audio/{ogg,mp4,webm} width:int height:int </td>
+                                        <td> <video width="200" height="120" controls> <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg"> </video> </td>
+                                    </tr>
+
+
+
+                                </table>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="gray">
+            <h3>Elementos CSS3</h3>
+            <table border="1">
+                <tr>
+                    <th>Propiedad</th>
+                    <th>Descripción</th>
+                    <th>Valores</th>
+                    <th>Ejemplo</th>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td>color de letra</td>
+                    <td>cualquier color</td>
+                    <td><span style="color: red;">prueba</span></td>
+                </tr>
+                <tr>
+                    <td>padding</td>
+                    <td>Espacio en el elemento y su borde</td>
+                    <td>Un número en pixels</td>
+                    <td> <span style="padding: 3px; border: 1px solid black;">Texto</span></td>
+                </tr>
+                <tr>
+                    <td>margin</td>
+                    <td>Espacio entre un elementos y otros elementos</td>
+                    <td>Un número en pixels</td>
+                    <td> <span style="margin: 3px; border: 1px solid black;">Texto</span> </td>
+                </tr>
+                <tr>
+                    <td>background</td>
+                    <td>Color del fondo de un elemento</td>
+                    <td> Cualquier color en HEX </td>
+                    <td> <span style="background:orange; border: 1px solid black;">Texto</span></td>
+                </tr>
+                <tr>
+                    <td>font-size</td>
+                    <td>Definir el tamaño del texto</td>
+                    <td> Cualquier tamaño en pt's</td>
+                    <td><span style="font-size:20pt; border: 1px solid black;">Texto a 20pt</span></td>
+                </tr>
+                <tr>
+                    <td>font-weight</td>
+                    <td>Cambiar la apariencia del texto</td>
+                    <td> normal | <mark>bold</mark> | bolder | lighter</td>
+                    <td> <span style="font-weight: bolder; border: 1px solid black;">Texto</span> </td>
+                </tr>
+                <tr>
+                    <td>border</td>
+                    <td>Crear border al elemento</td>
+                    <td> grosor: en px <br> tipo: ej "solid" <br> color</td>
+                    <td><span style="border:3px solid blue;">Texto</span></td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>Establecer el ancho de un elemento fijo</td>
+                    <td>Medida en px</td>
+                    <td><div style="width: 70px; border: 1px solid black;">Texto</div></td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>Establecer la altura de un elemento fijo</td>
+                    <td>Medida en px</td>
+                    <td><div style="height: 70px; border: 1px solid black;">Texto</div></td>
+                </tr>
+                <tr>
+                    <td>text-align</td>
+                    <td>Definir cómo colocar el texto dentro de un elemento</td>
+                    <td>center | left | right | justify</td>
+                    <td>
+                        <div style="text-align: left; border: 1px solid black;">Texto</div>
+                        <div style="text-align: center; border: 1px solid black;">Texto</div>
+                        <div style="text-align: right; border: 1px solid black;">Texto</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>text-decoration</td>
+                    <td>Cambiar decorado alrededor del texto</td>
+                    <td>
+                        line: none | underline | overline | line-through | blink
+                        <br>style: solid | wavy | dotted | dashed | double
+                        <br>color: initial | inherit | unset
+                    </td>
+                    <td><span style="text-decoration: overline dashed red">Lorem ipsum</span></td>
+                </tr>
+                <tr>
+                    <td>display</td>
+                    <td>Cambiar entre inline y block</td>
+                    <td>inline | block | inline-block | none</td>
+                    <td>
+                        Los links no cambian de linea normalmente
+                        <a style="display:block;" href="">Link</a>
+                        <a style="display:block;" href="">Link</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>visibility</td>
+                    <td>Controlar si un elemento se muestra o no</td>
+                    <td>visible | hidden | collapse</td>
+                    <td> <span id="foo" style="background:orange;">Hover Me</span></td>
+                    <script type="text/javascript">
+                        document.querySelector("#foo").addEventListener("mouseover",function(){
+                            this.style.visibility = "hidden";
+                            // sleep(1);
+                            setTimeout(function(){alert("Hi! I'm hidden");},2000);
+                        }, false);
+                    </script>
+                </tr>
+                <tr>
+                    <td>position</td>
+                    <td>Modificar cómo se colocan los elementos</td>
+                    <td> static | relative | absolute | sticky | <mark>fixed</mark></td>
+                    <td> Ver esquina abajo derecha... <span style="background: white;position: fixed; bottom: 10px; right: 10px; width: 100px;"><mark>Fixed</mark> wont move when scrolling</span> </td>
+                </tr>
+                <tr>
+                    <td>letter-spacing</td>
+                    <td>Cambiar el espacio entre letras</td>
+                    <td>Medida en px's</td>
+                    <td><span style="letter-spacing: 5px;"> unapalabramuylarga</span></td>
+                </tr>
+                <tr>
+                    <td>border-radius</td>
+                    <td>Redondear las esquinas del borde</td>
+                    <td>Medida en px's</td>
+                    <td><span style="border-radius: 7px; border: 2px solid black;"> unapalabramuylarga</span></td>
+                </tr>
+                <tr>
+                    <td>box-shadow</td>
+                    <td>Dar sombras a los contenedores</td>
+                    <td>Medida en px's</td>
+                    <td><span style="box-shadow: 4px 4px 20px 0px"> unapalabramuylarga</span></td>
+                </tr>
+                <tr>
+                    <td>opacity</td>
+                    <td>Dar transparencia a los elementos</td>
+                    <td>0 a 1</td>
+                    <td><div style="background: black; opacity: 0.5; color:white;"> Esto es negro</div></td>
+                </tr>
+                <tr>
+                    <td>z-index</td>
+                    <td>Manejar sobreposición de elementos en profundidad, a mayor número alto más encima</td>
+                    <td>Un entero</td>
+                    <td>
+                        <style type="text/css">
+                            .z{
+                                position: relative;
+                                width: 50px;
+                                padding: 5px;
+                                height: 40px;
+                                color: white;
+                            }
+                        </style>
+                        <div class="z" style="top: 20px; left: 20px; background: red; z-index:1"> index 1 </div>
+                        <div class="z" style="background: blue;z-index:2"> index 2 </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>float</td>
+                    <td>Modificar el flujo de colocación de los elementos hacia un lado</td>
+                    <td> left | right | none </td>
+                    <td><span style="background: orange; float:right;"> unapalabramuylarga</span></td>
+                </tr>
+
+            </table>
+        </div>
+        
+        <div class="gray">
+            <h3> Fecha de creación: 12 Agosto 2019 </h3>    
+        </div>
+
+        <div class="gray">
+            <h3> Referencias consultadas</h3>
+            <ul>
+                <li>
+                    <a href="https://www.quackit.com/css/properties/">CSS Properties</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/CSSref/">CSS Reference</a>
+                </li>
+                <li>
+                    <a href="https://www.htmlgoodies.com/tutorials/html5/new-tags-in-html5.html">New Tags in HTML5</a>
+                </li>
+
+            </ul>
+        </div>
+
+     
+    </body>
+
+
+</html>

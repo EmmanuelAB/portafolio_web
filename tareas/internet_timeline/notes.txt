@@ -1,0 +1,36 @@
+Historia Internet 
+69
+	ArpaNet: investig cientif univs
+	Advance Research Projects Agency Network
+	guerra fria, comunic en sits de guerra 
+71 
+	TCP/IP Cerf
+72
+	Primer mail 
+73
+	Primer conexion internacional
+74 
+	Internet como tal 
+83
+	Nace internet = arpanet con TCP/IP 
+91
+	Berners Lee inventa WWW (publico) = internet + hypertext
+93 
+	primer browser (mosaic)
+94 
+	netscape 90% usuarios
+	estandares w3c
+98 
+	nace google 
+01 
+	nace wikipedia
+04 
+	facebook 
+07 
+	iphone (smartphone) no solo compus
+	
+
+1.0 consumir 
+2.0 consumir/generar
+3.0 custom web
+4.0 IA 
