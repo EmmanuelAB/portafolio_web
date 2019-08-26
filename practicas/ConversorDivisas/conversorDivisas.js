@@ -24,6 +24,7 @@ window.onload = function(){
 	inputs.forEach(function(e){
 		e.onchange = function(){
 			assertOnlyFilled(this);
+			assertNonNegative(this);
 		}
 	});
 
@@ -35,6 +36,10 @@ window.onload = function(){
 		 		inputs[i].value = "";
 		 	}
 		}
+	}
+
+	function assertNonNegative(elem){
+		elem.value = (elem.value >= 0) ? elem.value : "";
 	}
 
 	// Get the value to be converted
@@ -54,6 +59,8 @@ window.onload = function(){
 		console.log(">>"+sourceValue);
 		for (var i = 0; i < inputs.length; i++) {
 			if(checks[i].checked && inputs[i].value == ""){
+				// Temp factor = 2
+				// MAKE THE REAL CONVERSION HERE
 				inputs[i].value = 2 * sourceValue;
 			}
 		}
