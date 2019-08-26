@@ -81,11 +81,11 @@ function escribirdias() {
                  celda=fila.getElementsByTagName("td")[j];
                  celda.innerHTML=midia;
                  //Recuperar estado inicial al cambiar de mes:
-                 celda.style.backgroundColor="#9bf5ff";
+                 celda.style.backgroundColor="#CCC";
                  celda.style.color="#492736";
                  //domingos en rojo
                  if (j==6) { 
-                    celda.style.color="#f11445";
+                    celda.style.color="#00A";
                     }
                  //dias restantes del mes en gris
                  if (mimes!=mescal) { 

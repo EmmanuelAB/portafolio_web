@@ -1,0 +1,61 @@
+#calendario, #diasc, h1{
+	text-align: center;
+}
+
+h1{
+	border: 2px solid #AAA;
+	border-radius: 10px;
+}
+
+table{display: inline;}
+
+#anterior, #titulos, #posterior{
+	display: inline;
+	background: #AAA;
+	color: white;
+	padding: 10px 20px;
+}
+#diasc, #fechaactual{
+	margin-top: 20px;	
+}
+
+#anterior:hover, #posterior:hover, i:hover{
+	background: #999;
+	text-decoration: underline;
+}
+
+i{
+	background: #AAA;
+ 	padding: 5px;
+ 	color: white;
+ 	margin: 0px 5px;
+}
+
+body{
+	background: #EEE;
+}
+
+#buscafecha{
+	width: 60%;
+	margin: auto;
+	margin-top: 20px;
+	border: 3px solid #CCC;
+}
+
+#buscafecha:hover{
+	border: 3px solid #00A;
+}
+
+td:hover{
+	font-weight: bold;
+	border: 2px solid gray;
+	padding: 3px;
+}
+td{
+	padding: 5px;
+}
+th{
+	font-size: 14pt;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
